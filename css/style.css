@@ -25,6 +25,10 @@ body {
     position: relative;
     text-align: center;
     margin: 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    transition: box-shadow 0.3s, border-color 0.3s;
 }
 
 .team-name {
@@ -38,13 +42,18 @@ body {
 .profile {
     height: 150px;
     width: 150px;
-    margin:5px;
+    margin: 5px;
+    box-shadow: none;
+    border-radius: 50%;
+    transition: box-shadow 0.3s;
 }
 
-.hovering {
-    box-shadow: 7px 7px 5px #ccc;
-    border: 2px black solid;
-    border-radius: 10px;
+.team-member.hovering {
+    border-color: #ffffff;
+    box-shadow: 0 0 16px 2px #ff0000;
 }
 
+.team-member.hovering .profile {
+    box-shadow: 0 8px 32px rgb(61, 23, 201);
+}
 
